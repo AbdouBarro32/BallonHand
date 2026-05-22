@@ -12,10 +12,16 @@ This integration is meant to improve grasp effectiveness and move beyond simple 
 
 - `Cogripper/haria_cogripper`: main gripper firmware
 - `Cogripper/haria_cogripper_dongle`: wireless dongle firmware
+- `handball_ws/`: catkin workspace snapshot for the ROS control layer and trajectory files
+- `handball_ws/src/pneumaticbox_traj_playback`: C++ ROS playback node and custom `goals.msg` message
+- `handball_ws/src/pneumaticbox_traj_controller`: Python ROS node for pneumatic pressure handling
+- `handball_ws/src/gripController`: Python ROS node that forwards grip commands over serial
 - `firmware_motori/`: motor and pneumatic gripper control firmware
 - `firmware_motori_edited/`: edited firmware variant
 - `class_vanni_softpadcontroller.py`: soft pad control script
 - `Tesi_Barro.pdf`: thesis documentation
+
+The imported ROS workspace intentionally excludes generated `build/` and `devel/` artifacts. The vendored `rosserial` checkout from the original external workspace is also not mirrored here, so it should be installed separately if you need that dependency in a local ROS setup.
 
 ## Demo
 

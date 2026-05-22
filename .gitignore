@@ -1,1 +1,6 @@
 .DS_Store
+__pycache__/
+handball_ws/build/
+handball_ws/devel/
+handball_ws/logs/
+handball_ws/.catkin_tools/
